@@ -1,0 +1,147 @@
+body {
+    background-image: url('background.png'); /* Path to your background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Cover the entire viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-position: center;
+    background-color: black;
+    
+    font-family: "Space Grotesk";
+    margin: 0;
+    padding: 0;
+
+  }
+  header p{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5;
+    color: rgb(75, 17, 75);
+    font-family: "Space Grotesk";
+    
+    
+  }
+  header h2{
+    text-align: center;
+    margin:0px;
+    font-size: 20px;
+    color: rgb(75, 17, 75);
+  }
+
+  header h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 5;
+    color: rgb(75, 17, 75);
+  }
+
+  header {
+    background-position-x: 10px;
+    height: 100vh;
+    margin-bottom: 100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+  
+  #dynamic-subtitle {
+    display: inline-block; /* Make it inline-block to respect width/height */
+    height: 40px; /* Set a fixed height */
+    overflow: hidden; /* Prevent overflow */
+    white-space: nowrap; /* Prevent wrapping of text */
+  }
+
+
+  #projects {
+    text-align: center; /* Center align the text */
+    margin: 20px 0; /* Margin above and below the section */
+  }
+.project-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    justify-content: center; /* Center the cards horizontally */
+  }
+  
+  .project-card {
+    min-width: 200px; /* Fixed width for consistent sizing */
+    height: 300px;
+    background-color: #282828;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items inside the card */
+    text-align: center; /* Center text inside the card */
+  }
+  .project-card img {
+    width: 100%;
+    height: 66%;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    background-color: #121212;
+    color: #00FF7F;
+    padding: 10px;
+    font-size: 1.1em;
+    text-align: center;
+    width: 100%;
+  }
+  
+
+  #tech-stack {
+    color:#daf781;
+    text-align: center; /* Center align the text */
+    margin: 20px 0; /* Margin above and below the section */
+  }
+  
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the icons */
+    gap: 15px; /* Space between icons */
+    padding: 20px; /* Padding around the icons */
+  }
+  
+  .tech-icon {
+    width: 50px; /* Set a fixed width for icons */
+    height: 50px; /* Set a fixed height for icons */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+  }
+  
+  .tech-icon:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+  }
+  
+  
+  #blockchain-data {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 8px;
+    color: #00FF7F;
+    font-family: monospace;
+    margin-top: 30px;
+    width: 80%;
+  }
+  
+  /* Typing Animation for the Subtitle */
+  .typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid;
+    animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
