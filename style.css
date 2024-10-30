@@ -1,11 +1,11 @@
 body {
-    background-image: url('background.png'); /* Path to your background image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-image: url('assets/background.png'); /* Path to your background image */
+    background-repeat:repeat; /* Prevent the image from repeating */
     background-size: cover; /* Cover the entire viewport */
     height: 100vh; /* Full height of the viewport */
     background-position: center;
     background-color: black;
-    
+    background-attachment:scroll;
     font-family: "Space Grotesk";
     margin: 0;
     padding: 0;
@@ -117,6 +117,7 @@ body {
   }
   
   
+  
   #blockchain-data {
     background-color: #282828;
     padding: 20px;
@@ -126,7 +127,44 @@ body {
     margin-top: 30px;
     width: 80%;
   }
+
+  /* Footer Styling */
+  .footer {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    justify-content: center;
+  }
+
+
+.footer h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #fff;
+  padding-right: 300px;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 1.5em;
+  transition: color 0.3s;
   
+}
+
+.footer a:hover {
+  color: #00acee; /* Optional hover color */
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+
+
+
   /* Typing Animation for the Subtitle */
   .typing {
     display: inline-block;

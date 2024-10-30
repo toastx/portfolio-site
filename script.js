@@ -1,6 +1,6 @@
 // script.js
 
-const subtitleText = ["Blockchain Developer", "Rust Developer"];
+const subtitleText = ["Blockchain Developer", "Backend Developer"];
 let subtitleIndex = 0;
 let charIndex = 0;
 const subtitleElement = document.getElementById("dynamic-subtitle");
