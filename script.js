@@ -1,39 +1,3 @@
-// script.js
-
-const navbar = document.getElementById("draggable-navbar");
-
-let offsetX, offsetY, isDragging = false;
-
-navbar.addEventListener("mousedown", (e) => {
-  // Capture initial position and offset
-  offsetX = e.clientX - navbar.offsetLeft;
-  offsetY = e.clientY - navbar.offsetTop;
-  isDragging = true;
-  navbar.style.cursor = "grabbing"; // Change cursor when dragging
-});
-
-document.addEventListener("mousemove", (e) => {
-  if (isDragging) {
-    // Update the position of the navbar
-    navbar.style.left = `${e.clientX - offsetX}px`;
-    navbar.style.top = `${e.clientY - offsetY}px`;
-  }
-});
-
-document.addEventListener("mouseup", () => {
-  isDragging = false; // Stop dragging
-  navbar.style.cursor = "grab"; // Reset cursor
-});
-
-
-
-
-
-
-
-
-
-
 const subtitleText = ["Blockchain Developer", "Backend Developer"];
 let subtitleIndex = 0;
 let charIndex = 0;

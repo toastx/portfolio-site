@@ -2,39 +2,43 @@ body {
     background-image: url('assets/background.png'); /* Path to your background image */
     background-repeat:repeat; /* Prevent the image from repeating */
     background-size: cover; /* Cover the entire viewport */
-    height: 100vh; /* Full height of the viewport */
+    height: 80vh; /* Full height of the viewport */
     background-position: center;
     background-color: black;
-    background-attachment:scroll;
+    background-attachment:fixed;
     font-family: "Space Grotesk";
     margin: 0;
     padding: 0;
 
   }
-  .navbar {
-    position: fixed; /* Keeps it floating on the page */
-    top: 20px; /* Initial top position */
-    left: 41%; /* Initial left position */
-    background-color: rgba(0, 0, 0, 0.283); /* Translucent background */
-    color: rgba(75, 17, 75);
-    padding: 10px;
-    border-radius: 8px;
-    cursor: grab; /* Cursor change to indicate it’s draggable */
-    z-index: 1000; /* Ensures it stays on top */
-    display: flex; /* Makes the navbar horizontal */
-    gap: 10px; /* Adds space between each link */
-  }
-  
-  .navbar a {
-    color: rgba(75, 17, 75);
-    padding: 8px;
+  #nav {
+    position: absolute;
+    left: 0px;
+    height: 40px;
+    background-color: rgba(44, 101, 180, 0.011);
+    width: 100%;
+    margin: 0 auto;
+}
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#nav ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+#nav ul li a {
     text-decoration: none;
-    white-space: nowrap; /* Keeps text from wrapping */
-  }
-  
-  .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
+    padding: 10px 20px;
+    display: block;
+    color:rgb(75, 17, 75);
+    font-size: 20px;
+    font-weight: 700; 
+    text-align: center;
+}
   
   
 
@@ -65,17 +69,19 @@ body {
   header h1{
     font-size: 60px;
     text-align: center;
-    margin: 5;
     color: rgb(75, 17, 75);
   }
 
   header {
-    background-position-x: 10px;
     height: 100vh;
-    margin-top: 20px; 
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0 20px; /* Padding for smaller screens */
+    box-sizing: border-box; /* Ensures padding does not affect width */
   }
   
   #dynamic-subtitle {
@@ -171,18 +177,6 @@ body {
     transform: scale(1.1); /* Scale effect on hover */
   }
   
-  
-  
-  #blockchain-data {
-    background-color: #282828;
-    padding: 20px;
-    border-radius: 8px;
-    color: #00FF7F;
-    font-family: monospace;
-    margin-top: 30px;
-    width: 80%;
-  }
-
   /* Footer Styling */
   .footer {
     display: flex;
