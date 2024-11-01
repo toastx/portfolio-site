@@ -1,17 +1,25 @@
 body {
-    background-image: url('assets/background.png'); /* Path to your background image */
-    background-repeat:repeat; /* Prevent the image from repeating */
-    background-size: cover; /* Cover the entire viewport */
-    height: 80vh; /* Full height of the viewport */
+    background-image: url('assets/background2.png'); 
+    background-size: cover;
     background-position: center;
     background-color: black;
     background-attachment:fixed;
     font-family: "Space Grotesk";
     margin: 0;
     padding: 0;
+    height: fit-content;
+}
 
-  }
+main {
+    margin: 0;
+    padding: 0;
+}
+.portfolio-main{
+  height: 100vh;
+}
+
   #nav {
+    padding-top: 10px;
     position: absolute;
     left: 0px;
     height: 40px;
@@ -40,9 +48,6 @@ body {
     text-align: center;
 }
   
-  
-
-
   header p{
     font-size: 30px;
     text-align: center;
@@ -50,20 +55,12 @@ body {
     margin-bottom: 5;
     color: rgb(75, 17, 75);
     font-family: "Space Grotesk";
-    
-    
+      
   }
   header a{
     padding-top: 20px;
     font-size: 20px;
     font-weight: 700;
-  }
-
-  header h2{
-    text-align: center;
-    margin:0px;
-    font-size: 20px;
-    color: rgb(75, 17, 75);
   }
 
   header h1{
@@ -80,62 +77,137 @@ body {
     align-items: center;
     text-align: center;
     margin: 0;
-    padding: 0 20px; /* Padding for smaller screens */
-    box-sizing: border-box; /* Ensures padding does not affect width */
+    padding: 0 20px;
+    box-sizing: border-box; 
   }
   
   #dynamic-subtitle {
-    display: inline-block; /* Make it inline-block to respect width/height */
-    height: 40px; /* Set a fixed height */
-    overflow: hidden; /* Prevent overflow */
-    white-space: nowrap; /* Prevent wrapping of text */
+    display: inline-block; 
+    height: 30px; 
+    overflow: hidden;
+    white-space: nowrap; 
   }
 
   #resume {
-    text-align: center; /* Center align the text */
-    margin: 20px 0; /* Margin above and below the section */
+    text-align: center; 
   }
 
   .resume-button {
     display: inline-block;
-    
-    margin-top: 10px;
     color: rgba(75, 17, 75); 
     text-align: center;
     text-decoration: none; 
-    width: 250px; /* Fixed small width */
-    transition: transform 0.3s; /* Smooth transition for text enlargement */
+    width: 250px; 
+    transition: transform 0.3s;
   }
   
   .resume-button:hover {
     transform: scale(1.1); /* Enlarging the text on hover */
   }
-  
 
-
-  #projects {
-    text-align: center; /* Center align the text */
-    margin: 20px 0; /* Margin above and below the section */
+  .top-row{
+    display:flex;
+    width: 100%;
+    gap:1.5em;
+    max-width: 1200px;
+    margin: auto;
   }
+
+  #about {
+    flex:0 0 65%;
+    padding: 2em;
+    margin: auto;
+    border-radius: 20px;
+    backdrop-filter: blur(10px) brightness(0.9);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid rgba(188, 17, 222, 0.8);
+    margin: auto;
+    display: block;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .about-text {
+    color: rgb(75, 17, 75);
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1em;
+  }
+  
+  #tech-stack {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 35%;
+    color: #000000;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    backdrop-filter: blur(10px) brightness(0.9);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Add padding if needed */
+    min-height: 200px; /* Set a minimum height */
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.tech-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s;
+}
+
+.tech-icon:hover {
+    transform: scale(1.1);
+}
+
+  
+  #projects {
+    width: 90%;
+    max-width: 600px;
+    text-align: center; /* Center align the text */
+    margin: auto;
+    border-radius: 20px;
+    backdrop-filter: blur(10px) brightness(0.9);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  
+  }
+
 .project-container {
     display: flex;
     gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 20px;
-    justify-content: center; /* Center the cards horizontally */
+    justify-content: center; 
   }
   
   .project-card {
-    min-width: 200px; /* Fixed width for consistent sizing */
+    min-width: 200px; 
     height: 300px;
     background-color: #282828;
     border-radius: 8px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items inside the card */
-    text-align: center; /* Center text inside the card */
+    align-items: center; 
+    text-align: center; 
   }
   .project-card img {
     width: 100%;
@@ -150,71 +222,32 @@ body {
     font-size: 1.1em;
     text-align: center;
     width: 100%;
-  }
-  
-
-  #tech-stack {
-    color:#daf781;
-    text-align: center; /* Center align the text */
-    margin: 20px 0; /* Margin above and below the section */
-  }
-  
-  .tech-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the icons */
-    gap: 15px; /* Space between icons */
-    padding: 20px; /* Padding around the icons */
-  }
-  
-  .tech-icon {
-    width: 50px; /* Set a fixed width for icons */
-    height: 50px; /* Set a fixed height for icons */
-    transition: transform 0.2s; /* Smooth scaling on hover */
-  }
-  
-  .tech-icon:hover {
-    transform: scale(1.1); /* Scale effect on hover */
-  }
-  
-  /* Footer Styling */
-  .footer {
+  } 
+.footer {
     display: flex;
     gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
     padding: 20px;
     justify-content: center;
-  }
-
-
+}
 .footer h2 {
   margin: 0;
   font-size: 1.5em;
-  color: #fff;
+  color: #ffffff;
   padding-right: 300px;
 }
-
 .footer a {
-  color: #fff;
+  color: #fffefe;
   font-size: 1.5em;
-  transition: color 0.3s;
-  
+  transition: color 0.3s;  
 }
-
 .footer a:hover {
-  color: #00acee; /* Optional hover color */
+  color: rgb(75, 17, 75); /* Optional hover color */
 }
-
 .footer-right {
   display: flex;
   gap: 15px;
 }
 
-
-
-
-  /* Typing Animation for the Subtitle */
   .typing {
     display: inline-block;
     overflow: hidden;
