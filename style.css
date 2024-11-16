@@ -15,6 +15,7 @@ main {
 }
 .portfolio-main{
   height: 100vh;
+  font-family: "Space Grotesk";
 }
 
   #nav {
@@ -107,13 +108,15 @@ main {
   }
 
   .about-techstack-container {
-    
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
+    
     padding: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
     margin: 0 auto;
     font-family: "Space Grotesk";
   }
@@ -124,20 +127,26 @@ main {
     backdrop-filter: blur(10px) brightness(0.9);
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 50px;
     margin-bottom: 20px;
+    
     box-sizing: border-box;
     flex: 7
   }
   .bento-box:first-child { /* About Me section */
+    
     flex: 6.5; /* Takes 70% of the space */
 }
 
 .bento-box:last-child { /* Tech Stack section */
     flex: 3.5; /* Takes 30% of the space */
 }
+  .about{
+    
+  }
   
   .profile-photo-container {
+    
     text-align: center;
   }
   
@@ -198,7 +207,7 @@ main {
   #projects {
     margin-top: 30vh;
     text-align: center;
-    height: 100vh;
+    height: 80vh;
   
   }
 
@@ -212,15 +221,7 @@ main {
     justify-content: center; 
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
+  
   
   .project-card {
     width: 300px;
