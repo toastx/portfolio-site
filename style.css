@@ -2,12 +2,11 @@ body {
     background-image: url('assets/background2.png'); 
     background-size: cover;
     background-position: center;
-    background-color: black;
     background-attachment:fixed;
     font-family: "Space Grotesk";
     margin: 0;
     padding: 0;
-    height: fit-content;
+    
 }
 
 main {
@@ -83,9 +82,11 @@ main {
   
   #dynamic-subtitle {
     display: inline-block; 
-    height: 30px; 
+    height: 40px; 
     overflow: hidden;
-    white-space: nowrap; 
+    white-space: nowrap;
+    animation: cursor .8s infinite;
+    animation-timing-function: linear; 
   }
 
   #resume {
@@ -105,25 +106,43 @@ main {
     transform: scale(1.1); /* Enlarging the text on hover */
   }
 
-  .top-row{
-    display:flex;
-    width: 100%;
-    gap:1.5em;
-    max-width: 1200px;
-    margin: auto;
+  .about-techstack-container {
+    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: "Space Grotesk";
   }
-
-  #about {
-    flex:0 0 65%;
-    padding: 2em;
-    margin: auto;
-    border-radius: 20px;
-    backdrop-filter: blur(10px) brightness(0.9);
+  
+  .bento-box {
+    width: 45%;
     background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px) brightness(0.9);
+    border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    flex: 7
+  }
+  .bento-box:first-child { /* About Me section */
+    flex: 6.5; /* Takes 70% of the space */
+}
+
+.bento-box:last-child { /* Tech Stack section */
+    flex: 3.5; /* Takes 30% of the space */
+}
+  
+  .profile-photo-container {
+    text-align: center;
   }
   
   .profile-photo {
+    
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -141,55 +160,50 @@ main {
     margin-top: 1em;
   }
   
-  #tech-stack {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 35%;
-    color: #000000;
+  #tech-stack h2 {
     text-align: center;
-    margin: auto;
-    border-radius: 20px;
-    backdrop-filter: blur(10px) brightness(0.9);
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 20px; /* Add padding if needed */
-    min-height: 200px; /* Set a minimum height */
-    align-items: center;
-    justify-content: center;
-}
-
-.tech-icons {
+    color: rgb(75, 17, 75);
+  }
+  
+  .tech-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     padding: 20px;
-}
-
-.tech-icon {
+  }
+  
+  .tech-icon {
     width: 50px;
     height: 50px;
     transition: transform 0.2s;
-}
-
-.tech-icon:hover {
+  }
+  
+  .tech-icon:hover {
     transform: scale(1.1);
-}
+  }
+  
+  @media (max-width: 768px) {
+    .about-techstack-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bento-box {
+      width: 80%;
+    }
+  }
 
   
   #projects {
-    width: 90%;
-    max-width: 600px;
-    text-align: center; /* Center align the text */
-    margin: auto;
-    border-radius: 20px;
-    backdrop-filter: blur(10px) brightness(0.9);
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 30vh;
+    text-align: center;
+    height: 100vh;
   
   }
 
 .project-container {
+    margin: auto;
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -198,31 +212,48 @@ main {
     justify-content: center; 
   }
   
-  .project-card {
-    min-width: 200px; 
-    height: 300px;
-    background-color: #282828;
-    border-radius: 8px;
-    overflow: hidden;
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
   }
+  
+  .project-card {
+    width: 300px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  }
+  
   .project-card img {
     width: 100%;
-    height: 66%;
+    height: 180px;
     object-fit: cover;
   }
   
   .card-title {
-    background-color: #121212;
-    color: #00FF7F;
-    padding: 10px;
-    font-size: 1.1em;
-    text-align: center;
-    width: 100%;
-  } 
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 0 10px;
+    color: #ffffff;
+    background-color: #ff0000;
+    padding: 10px 0;
+  }
+  
 .footer {
     display: flex;
     gap: 20px;
