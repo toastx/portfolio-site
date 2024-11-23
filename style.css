@@ -1,14 +1,15 @@
 body {
+  
     background-image: url('assets/background3.png'); 
     background-size: cover;
     background-position: center;
     background-attachment:fixed;
-    
     font-family: "Space Grotesk";
     margin: 0;
     padding: 0;
     
 }
+
 
 main {
     margin: 0;
@@ -143,7 +144,7 @@ main {
     flex: 3.5; /* Takes 30% of the space */
 }
   .about-title{
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Space Grotesk";
     display: flex;
     justify-content: center;
@@ -218,7 +219,7 @@ main {
     color: rgb(75, 17, 75);
   }
   #projects h2{
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
 .project-container {
@@ -320,14 +321,17 @@ main {
   #contact {
     color: rgb(75, 17, 75);
     text-align: center;
-    height: 30vh;
+    height: auto; /* Adjust height to fit content */
     display: flex;
     justify-content: center;
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Align content in column */
+    padding-bottom: 30vh;
   }
-  .contact-div{
+  
+  .contact-div {
     overflow: hidden;
     width: 60%;
-    
   }
   
   #contact h2 {
@@ -340,21 +344,34 @@ main {
     color: rgb(75, 17, 75);
     font-size: 1rem;
     font-weight: bold;
-    display: flex;
+    display: inline-flex; /* Align links horizontally */
     justify-content: center;
+    margin: 10px 10px; /* Add spacing between each icon */
   }
+  
   #contact a {
     color: rgb(75, 17, 75);
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 2rem; /* Increase icon size */
   }
   
+  
   #contact a.twitter:hover {
-    color: #0d95e8; /* Darker Twitter blue on hover */
+    color: #0d95e8; 
   }
+  
   #contact a.discord:hover {
-    color: #1f2664; /* Darker Twitter blue on hover */
+    color: #000000;
+  }
+  
+  #contact a.github:hover {
+    color: #000000; 
+  }
+  
+  #contact a.linkedin:hover {
+    color: #0d95e8; 
   }
   
   .typing {
