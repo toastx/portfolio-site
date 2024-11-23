@@ -1,8 +1,9 @@
 body {
-    background-image: url('assets/background2.png'); 
+    background-image: url('assets/background3.png'); 
     background-size: cover;
     background-position: center;
     background-attachment:fixed;
+    
     font-family: "Space Grotesk";
     margin: 0;
     padding: 0;
@@ -141,8 +142,14 @@ main {
 .bento-box:last-child { /* Tech Stack section */
     flex: 3.5; /* Takes 30% of the space */
 }
-  .about{
-    
+  .about-title{
+    font-size: 2rem;
+    font-family: "Space Grotesk";
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: rgb(75, 17, 75);
   }
   
   .profile-photo-container {
@@ -205,10 +212,13 @@ main {
 
   
   #projects {
-    margin-top: 30vh;
+    margin-top: 35vh;
     text-align: center;
     height: 80vh;
-  
+    color: rgb(75, 17, 75);
+  }
+  #projects h2{
+    font-size: 2rem;
   }
 
 .project-container {
@@ -218,16 +228,17 @@ main {
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 20px;
-    justify-content: center; 
+    justify-content: center;
+    text-align: left; 
   }
   
   
-  
   .project-card {
-    width: 300px;
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 450px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px) brightness(0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     text-align: center;
     color: white;
@@ -244,42 +255,108 @@ main {
     height: 180px;
     object-fit: cover;
   }
-  
-  .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 15px 0;
-    padding: 0 10px;
-    color: #ffffff;
-    background-color: #ff0000;
-    padding: 10px 0;
+  .project-tech-stack{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+  .project-tech-stack img{
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0.25rem;
+    transition: transform 0.2s ease;
+  }
+  .project-tech-stack img:hover{
+    transform: scale(1.1);
+  }
+
+  .visit-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, #ec4899, #db2777);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: fit-content;
+    margin-top: 0.5rem;
+    margin-bottom: 20px;
+}
+  .visit-button:hover {
+    background: linear-gradient(to right, #db2777, #be185d);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .visit-button svg {
+    width: 1rem;
+    height: 1rem;
   }
   
-.footer {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-}
-.footer h2 {
-  margin: 0;
-  font-size: 1.5em;
-  color: #ffffff;
-  padding-right: 300px;
-}
-.footer a {
-  color: #fffefe;
-  font-size: 1.5em;
-  transition: color 0.3s;  
-}
-.footer a:hover {
-  color: rgb(75, 17, 75); /* Optional hover color */
-}
-.footer-right {
-  display: flex;
-  gap: 15px;
-}
+  .card-title {
+    border-top: black;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px 0;
+    
+    color: rgb(75, 17, 75);
+    padding: 10px 0;
+  }
 
+  .card-desc{
+    font-weight: 600;
+    font-size: 1.2em;
+    padding:10px;
+    color: rgb(75, 17, 75);
+  }
+
+  
+  #contact {
+    color: rgb(75, 17, 75);
+    text-align: center;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+  }
+  .contact-div{
+    overflow: hidden;
+    width: 60%;
+    
+  }
+  
+  #contact h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #contact p {
+    color: rgb(75, 17, 75);
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+  #contact a {
+    color: rgb(75, 17, 75);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #contact a.twitter:hover {
+    color: #0d95e8; /* Darker Twitter blue on hover */
+  }
+  #contact a.discord:hover {
+    color: #1f2664; /* Darker Twitter blue on hover */
+  }
+  
   .typing {
     display: inline-block;
     overflow: hidden;

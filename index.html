@@ -19,7 +19,7 @@
       <ul>
           <li><a href="#portfolio-main">Home</a>
           </li>
-          <li><a href="#about">About</a>
+          <li><a href="#dynamic-title">About</a>
           </li>
           <li><a href="#projects">Project</a>
           </li>
@@ -37,13 +37,14 @@
 
 
   <main>
-    <<div class="about-techstack-container">
+    <div class="about-title">About Me</div>
+    <div class="about-techstack-container">
       <section id="about" class="bento-box">
         <div class="profile-photo-container">
           <img src="assets/icon.jpg" alt="Profile Photo" class="profile-photo">
         </div>
         <div class="about-text">
-          <h2>About Me</h2>
+          
           <p>
            
           </p> Hi there! I'm Toastx, a passionate developer and designer. I'm excited about building innovative decentralized applications that leverage the power of the Solana blockchain. I enjoy crafting intuitive smart contracts are dApps. When I'm not coding, you’ll find me exploring new anime, gaming or playing basketball.
@@ -73,36 +74,115 @@
       <h2>Projects</h2>
       <div class="project-container">
         <div class="project-card">
-          <img src="project1.png" alt="Project 1">
-          <div class="card-title">Project 1</div>
+          <img src="assets/linkpay.jpg" alt="Project 1">
+            <div class="card-title">LinkPay</div>
+            <div class="card-desc">Send payments on Stellar blockchain using Links. Now even your grandmas can use blockchain using this dapp</div>    
+
+            <div class="project-tech-stack">
+                <img src="assets/Python.svg" 
+                      alt="Python">
+                <img src="assets/TypeScript.svg" 
+                      alt="TypeScript">
+                <img src="assets/Next.js.svg" 
+                      alt="next-js">
+                <img src="assets/PostgresSQL.svg" 
+                      alt="PostgresSQL">
+            </div>
+
+            <a href="https://devfolio.co/projects/linkpay-fe3e" class="visit-button" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" 
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Visit Project
+            </a>
+        </div>
+        
+        <div class="project-card">
+          <img src="assets/coinvo.jpg" alt="Project 2">
+          <div class="card-title">CoinVo</div>
+          <div class="card-desc">Chat with your anon friends while having the ability to send them money on any possible blockchain.</div>    
+
+          <div class="project-tech-stack">
+              <img src="assets/Solidity.svg" 
+                    alt="Python">
+              <img src="assets/TypeScript.svg" 
+                    alt="TypeScript">
+              <img src="assets/Next.js.svg" 
+                    alt="next-js">
+          </div>
+
+          <a href="https://devfolio.co/projects/coinvo-9a64" class="visit-button" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              Visit Project
+          </a>
         </div>
         <div class="project-card">
-          <img src="project2.png" alt="Project 2">
-          <div class="card-title">Project 2</div>
-        </div>
-        <div class="project-card">
-          <img src="project3.png" alt="Project 3">
-          <div class="card-title">Project 3</div>
+          <img src="assets/certiguard.jpg" alt="Project 3">
+          <div class="card-title">CertiGuard</div>
+          <div class="card-desc">Save and secure your certificates from forgery, and own the proof of owing the certificate</div>    
+
+          <div class="project-tech-stack">
+            <img src="assets/rust.svg" 
+                alt="Rust">
+            <img src="assets/Python.svg" 
+                alt="Python">
+            <img src="assets/TypeScript.svg" 
+                alt="TypeScript">
+            <img src="assets/Next.js.svg" 
+                alt="next-js">
+            <img src="assets/metaplex.png" 
+                alt="Metaplex">
+            <img src="assets/anchor.png" 
+                alt="Anchor">
+
+          </div>
+
+          <a href="https://devfolio.co/projects/certiguard-b148" class="visit-button" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              Visit Project
+          </a>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <h2>TOASTX</h2>
-      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-          <i class="fab fa-twitter"></i>
+    <section id="contact">
+      <div class="contact-div">
+      <h2>Get in Touch</h2>
+      <ul>
+      <p><a class="twitter" href="https://twitter.com/Dxddytoast" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
       </a>
-      <a href="https://github.com/toastx" target="_blank" aria-label="GitHub">
+    </p>
+    <p>
+      <a class ="github" href="https://github.com/toastx" target="_blank" aria-label="GitHub"> 
           <i class="fab fa-github"></i>
       </a>
-      <a href="https://discordapp.com/users/666342342592167939" target="_blank" aria-label="Discord">
+    </p>
+    <p>
+      <a class ="discord" href="https://discordapp.com/users/666342342592167939" target="_blank" aria-label="Discord">
           <i class="fab fa-discord"></i>
       </a>
-      <a href="https://linkedin.com/in/dipeshnv/" target="_blank" aria-label="LinkedIn">
+    </p>
+    <p>
+      <a class ="linkedin" href="https://linkedin.com/in/dipeshnv/" target="_blank" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
       </a>
-    </footer>
-
+    </p>
+    </div>
+    </section>
   </main>
   
   
